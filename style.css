@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d6e2f0, #1b62d4); /* Light Blue Gradient */
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(30, 60, 114, 1) 20%, rgba(42, 82, 152, 1) 80%);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    background: url('img.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Right Section */
+.right-section {
+    flex: none;
+    width: 200px;
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h1 {
+    margin-bottom: 90px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Input Container */
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 10px 10px 10px 35px; 
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+    border-bottom-color: #3498db;
+    outline: none;
+}
+
+/* Icon Style */
+.input-container i {
+    position: absolute;
+    left: 10px;
+    color: #888;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: none; 
+}
+
+/* Button */
+button {
+    height: 40px;
+    width: 120px;
+    background: linear-gradient(to right, #64dfe8, #0c419b);
+    color: aliceblue;
+    font-size: large;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 50%;
+    box-shadow: 0 4px 8px rgba(0, 64, 155, 0.2);
+    transition: box-shadow 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .left-section {
+        padding: 20px;
+    }
+
+    .right-section {
+        padding: 30px;
+    }
+}

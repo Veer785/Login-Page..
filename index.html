@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>Best Of Luck!</h1>
+            <p>Online portal to evaluate software programming skills in several technologies</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1 >Login</h1>
+            <form id="loginForm">
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i> 
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fas fa-lock"></i> 
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+
+                <p class="error-message" id="error-message">Invalid Username or Password.</p>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
